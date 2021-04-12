@@ -1,0 +1,705 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139594053-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139594053-1');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Điểm dừng chân</title>
+    <!--css-->
+    <meta name="keywords"  content="bãi biển cửa lò,nghệ an,du lịch nghệ an 2019,khách sạn công đoàn,khách sạn mường thanh,du lịch nghệ an,khách sạn,khách sạn vũ hương,khu nghỉ dưỡng ở nghệ an,sài gòn kim liên,sài gòn kim liên resort,cửa lò,khách sạn du lịch,khách sạn thiên ân" />
+    <link href="css/style.css" rel="stylesheet" >
+    <link href='http://fonts.googleapis.com/css?family=Tinos:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+
+            color: #f29000;
+        }
+
+
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+             nav.navbar.navbar-default {
+        margin-left: 0px;
+}
+        }
+
+        .btn {
+            background: none;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 14px;
+            border: 2px solid #ff9900;
+            padding: 7px 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 10px 0 0;
+            border-radius: 0px
+        }
+        .btn:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: #ff9900;
+        }
+        li:hover > a {
+            text-decoration: none;
+        }
+        .header-grid ul li {
+            display: inline-block;
+            color: #656565;
+            margin-top: 7px;
+        }
+        .header-grid ul li a {
+            color: #2b62ae;
+            font-size: 14px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .header-grid ul li label {
+            color: #6e6586;
+            font-size: 13px;
+            margin: 0 10px;
+            font-weight: 300;
+            height: 18px;
+            position: relative;
+            top: -2px;
+        }
+        .header-grid ul li.dv-mem-login {
+            display: inline-block !important;
+        }
+        .dv-mem-login {
+            position: relative;
+            display: inline-block;
+        }
+        .glo-dangky-gruop {
+            display: inline-block;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0px;
+        }
+        .dv-mem-login .glo-dangky-gruop li a, .mem_active {
+            border-left: 1px solid #ccc;
+            padding-left: 15px;
+            margin: 0px 0 0px 15px;
+            display: inline-block;
+            line-height: 1;
+            color: #333;
+        }
+        .cart {
+            margin-top: 15px;
+            position: relative;
+            float: right;
+            padding-right: 15px;
+        }
+        a.cart-in {
+            width: 40px;
+            height: 37px;
+            background: url(images/img-sprite.png) 0px 0px;
+            display: block;
+            text-decoration: none;
+        }
+        .cart span {
+            background: #ff9900;
+            border-radius: 100px;
+            color: #fff;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            display: block;
+            top: -12px;
+            right: 0;
+            position: absolute;
+            text-align: center;
+            line-height: 30px;
+        }
+        .search-top {
+            margin-top: 10px;
+        }
+        .search {
+            margin: 10px 20px 0 0;
+            position: relative;
+            background: #dadada;
+            padding: 5px 0px;
+            width: 80%;
+            float: right;
+            max-width: 300px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .search input[type="text"] {
+            outline: none;
+            padding: 4px 15px;
+            background: none;
+            width: 79.33%;
+            border: none;
+            font-size: 14px;
+            color: #383838;
+            font-weight: 500;
+        }
+        .search input[type="button"] {
+            width: 60px;
+            background: #2b62ae url(images/img-sprite.png) -48px 4px no-repeat;
+            background-size: auto auto;
+            padding: 4px 10px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            outline: none;
+            top: 0;
+            display: block;
+            right: 0;
+            height: 38px;
+            background-size: 890px auto;
+        }
+        .search-in {
+    float: right;
+    margin-bottom: 19px;
+}
+.header-bottom-bottom {
+    border-top: 4px solid #2b62ae;
+}
+        #myTopnav ul li a {
+            display: block;
+        }
+        #myTopnav ul li .sub-menu{
+            display: none ;
+        }
+        #myTopnav ul li:hover .sub-menu{
+            display: block ;
+        }
+        .zxc,h3,h2 {
+    
+    color: #2b62ae;
+    font-family: auto;
+    font-size: 22px;
+    font-weight: 600;
+}
+h4{
+     color: #2b62ae;
+    font-family: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn{
+        border: 2px solid #3F51B5;
+}
+.navbar  a {
+    font-size: 15px;
+    font-family: auto;
+    font-weight: 600;
+}
+.navbar li:hover{
+    background-color: #d2a82a;
+}
+.titile {
+    color: #2b62ae;
+    font-size: 17px;
+}
+.products-in-news3:hover{
+    background-color: #2b62ae;
+    color: white;
+}
+.tag_link li a:hover {
+    background-color: #2b62ae;
+    color: white;
+}
+h3.recent_title {
+    margin: 0 0 25px;
+    font-size: 14px;
+    color: #2f58a7;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 0px 0 #F3F3F3;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 6px;
+    clear: both;
+    font-weight: 600;
+    color: #2b62ae;
+    border-bottom: 1px solid #2b62ae;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #2c63af;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    margin-left: -90px;
+    padding-right: 0px;
+    border-bottom: 3px solid #2b62ae;
+}
+.nav>li {
+    margin-right: 5px;
+}
+
+    </style>
+</head>
+<body><!--header-->
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="logo" style="float: left;">
+                <a href="#"><img alt="#" class="img_logo"  style="max-width: 100% !important;
+
+                height: 80px !important;" src="http://dulichnghean.gov.vn/images/2016/v-logo-nghean.png"></a>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="search-in">
+                <div class="header-grid">
+                    <ul>
+                        <li class="in-up">Hotline: <a href="tel:0918584119" class="scroll">0918584119</a> <label>|</label></li>
+                        <li class="in-up">Email: <a href="mailto:web@pavietnam.vn" class="scroll">web@pavietnam.vn</a> </li>
+                        <li class="dv-mem-login" style="display: none">
+                            <div class="glo-dangky-gruop">
+                              
+                                <ul>
+                                    <li><a href="dangnhap.html" onclick="ShowHidden('id_mem_login'); return false;" class="mem memdn">Đăng nhập</a></li>
+                                    <li><a href="dangki.html" class="mem memdk">Đăng ký</a></li>
+                                </ul>
+                              
+                            </div>                      </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-cart">
+                
+                    <div class="search-top">
+                        <div class="search">
+                            <input type="text" class="key_timkiem" value="Nhập từ khóa tìm kiếm..." onfocus="if (this.value == 'Nhập từ khóa tìm kiếm...'){this.value='';}" onblur="if (this.value == '') {this.value='Nhập từ khóa tìm kiếm...';}">
+                            <input type="button" value="Search" onclick="SEARCH_btn()">
+                        
+                        </div>
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--header-->
+<!--menu-->
+ <nav class="navbar navbar-default" role="navigation">
+
+    <div class="container">
+
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+
+          <span class="sr-only">Toggle navigation</span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="khachsan.html">KHÁCH SẠN</a></li>
+                <li><a href="amthuc.html">ẨM THỰC</a></li>
+                <li><a href="camnang.html">CẨM NANG</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TOUR NGHỆ AN
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">NGHE AN 2 NGAY</a></li>
+                      <li><a href="#">NGHE AN 3 NGAY</a></li>
+                      <li><a href="#">NGHE AN-ĐÀ NẴNG</a></li>
+                      <li><a href="#">CỬA LÒ-BÃI LỮ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">TIN TỨC SỰ KIỆN</a></li>
+                 <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+<!--end menu-->
+<DIV CLASS="container" style="margin-bottom: 30px">
+    <div class="row">
+        <div class="col-md-9">
+            <h3 class="recent_title">
+            Khách sạn           
+            </h3>
+
+        
+            <div id="recent-posts" class="clearfix">
+
+            <div id="post-288" class="post-288 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/khach-san/khach-san-cong-doan-cua-lo/" title="Khách sạn Công đoàn Cửa Lò"><img src="http://dulichcualonghean.com/wp-content/uploads/2015/03/khach-san-cong-doan-cua-lo.jpg" alt="Khách sạn Công đoàn Cửa Lò có vị trí thuận lợi" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/khach-san/khach-san-cong-doan-cua-lo/" title="Permalink to Khách sạn Công đoàn Cửa Lò" rel="bookmark">Khách sạn Công đoàn Cửa Lò</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Khách sạn Công Đoàn Cửa Lò có một vị trí khá thuận lợi ở trung tâm thị xã Cửa Lò, rất gần với bưu điện, ngân hàng, sân vận động, trung tâm mua sắm và nhiều nhà hàng Á &#8211; Âu nên rất thuận tiện cho du khách khi đến với du lịch Cửa Lò giá rẻ. Đặc biệt để [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+                </div><!-- /.post-content -->
+
+            </div><!-- #post-288 -->
+
+            <div id="post-72" class="post-72 ">
+
+                <div class="post-thumb"><a href="http://dulichnghean.gov.vn/index.asp?options=items&code=14179" title="Khách sạn chất lượng cao ở Cửa Lò &#8211; Khách sạn  Vũ Hương"><img src="http://dulichnghean.gov.vn/uploads/image/KC/75.jpg" alt="Khách sạn chất lượng cao ở Cửa Lò &#8211; Khách sạn  Vũ Hương" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/khach-san/72/" title="Permalink to Khách sạn chất lượng cao ở Cửa Lò &#8211; Khách sạn  Vũ Hương" rel="bookmark">Khách sạn Mường Thanh Luxury Sông Lam</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Khách sạn Mường Thanh Sông Lam đạt tiêu chuẩn 5 sao nằm trong top những tòa nhà cao nhất và hiện đại nhất thành phố Vinh. [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+                </div><!-- /.post-content -->
+
+            </div><!-- #post-72 -->
+
+            <div id="post-69" class="post-69 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/khach-san/khu-nghi-duong-cao-cap-sai-gon-kim-lien-resort/" title="Khu nghỉ dưỡng cao cấp Sài Gòn Kim Liên resort"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/03/sai-gon-kim-lien.jpg" alt="Khu nghỉ dưỡng cao cấp Sài Gòn Kim Liên resort" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/khach-san/khu-nghi-duong-cao-cap-sai-gon-kim-lien-resort/" title="Permalink to Khu nghỉ dưỡng cao cấp Sài Gòn Kim Liên resort" rel="bookmark">Khu nghỉ dưỡng cao cấp Sài Gòn Kim Liên resort</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Sài Gòn Kim Liên resort, là khu du lịch nghỉ dưỡng cao cấp đạt tiêu chuẩn 4 sao đầu tiên tại thị xã Du lịch biển Cửa Lò Nghệ An. Khu du lịch nằm trong khuôn viên rộng rãi, thoáng mát ở trung tâm bãi biển Cửa Lò, là sự kết hợp hài hòa giữa phong cách  hiện đại, thanh lịch [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+            
+
+                </div><!-- /.post-content -->
+
+            </div><!-- #post-69 -->
+
+            <div id="post-66" class="post-66 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/khach-san/khach-san-thien-an-du-lich-cua-lo/" title="Khách sạn Thiên Ân &#8211; du lịch Cửa Lò"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/03/khachsanthienancualo.jpg" alt="Khách sạn Thiên Ân &#8211; du lịch Cửa Lò" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/khach-san/khach-san-thien-an-du-lich-cua-lo/" title="Permalink to Khách sạn Thiên Ân &#8211; du lịch Cửa Lò" rel="bookmark">Khách sạn Thiên Ân &#8211; du lịch Cửa Lò</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Khách sạn Thiên Ân tại khu du lịch Cửa Lò được hoàn thành và đưa vào hoạt động vào mùa hè 2004, có kiến trúc đẹp, rộng, thoáng mát, trang thiết bị nội thất sang trọng và các dịch vụ hoàn hảo với đội ngũ nhân viên giàu kinh nghiệm, tận tình phục vụ. Nằm bám Đ. Bình Minh, cách quảng [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div>
+
+            </div>
+
+                <div class="navigation">
+    </div> </div>
+    </div> <!-- /#posts -->
+
+
+
+        <div class="col-md-3">
+            <h3 class="titile">
+                KHÁM PHÁ NGHỆ AN
+            </h3>
+            <div class="products-in-news4">
+                <UL CLASS="product-in-news" >
+                    <li class="" >
+                        <a  class="products-in-news3" href="vegatables.html">
+                        Điều kiện tự nhiên
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="cereal.html">
+                            Cơ sở hạ tầng
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="beans.html">
+                            Tiềm năng du lịch
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="vegatables.html">
+                            Văn hóa
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="cereal.html">
+                            Lễ hội
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="beans.html">
+                            Tậpp huấn,Đào tạo
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+                </UL>
+            </div>
+            <div class="hot-news">
+                <h3 class="titile">
+                    TIN TỨC HOT
+                </h3>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/00000000000000fesybvallangnghe.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Cháo lươn, giò bê Nghệ An hút khách ở Festival Huế dịp lễ</b>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/12/CL123.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Nghệ An đón hàng chục vạn lượt du khách trong 3 ngày đầu nghỉ lễ 30/4 và 1/5</b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/KC/19(2).jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Khám phá sông Giăng vào Hạ tấp nập khách du lịch</b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/KC/6(6).jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Những hình ảnh lấp lánh tuyệt đẹp của biển Cửa Lò khiến bạn muốn đến </b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="tags " >
+                <H3 CLASS="titile">
+                    TAGS
+                </H3>
+                <ul class="tag_link" >
+                    <li>
+                        <a href="#">Đi đâu</a>
+                    </li>
+                    <li>
+                        <a href="#">Nhà hàng đặc sản địa phương</a>
+                    </li>
+                    <li>
+                        <a href="#">Ở đâu</a>
+                    </li>
+                    <li>
+                        <a href="#">Ăn gì</a>
+                    </li>
+                    <li>
+                        <a href="#">Chơi gì</a>
+                    </li>
+                    <li>
+                        <a href="#">Tour du lịch nổi bật</a>
+                    </li>
+                    <li>
+                        <a href="#">Lữ hành</a>
+                    </li>
+                    <li>
+                        <a href="#">Vận chuyển</a>
+                    </li>
+                    <li>
+                        <a href="#">Xuất nhập cảnh</a>
+                    </li>
+                    <li>
+                        <a href="#">Công an</a>
+                    </li>
+                    <li>
+                        <a href="#">Bệnh viện</a>
+                    </li>
+                    <li>
+                        <a href="#">Thông tin liên lạc</a>
+                    </li>
+                    <li>
+                        <a href="#">Đường dây nóng</a>
+                    </li>
+                    <li>
+                        <a href="#">Ngân hàng-ATM</a>
+                    </li>
+                    <li>
+                        <a href="#">Ta xi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+</DIV>
+
+<!--scrool to top-->
+<div class="container" >
+    <a href="#top" class="to-top"  ><i class="glyphicon glyphicon-chevron-up" ></i></a>
+</div>
+<script>
+    $(document).ready(function (){
+        var offset=167;
+
+        $(window).scroll(function (){
+            if($(this).scrollTop() > offset){
+                $('.to-top').fadeIn();
+            }
+            else{
+                $('.to-top').fadeOut();
+            }
+        });
+
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop: 0}, 1000)
+        })
+    });
+</script>
+<!--scrool to top-->
+<!--footer-->
+<footer>
+        <div class="container">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>CƠ QUAN CHỦ QUẢN</h4>
+                <DIV>
+                    <P>Adrees: 38 Quang Trung street,Lê Lợi District, Vinh city, Vietnam.</P>
+                    <p>Phone: +84918584119</p>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>THỜI GIAN HOẠT ĐỘNG</h4>
+                <DIV>
+                    <ul>
+                        <li>Mon - Fri: 7am to 8pm</li>
+                        <li>Sat & Sun: 7am to 6pm</li>
+                    </ul>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <DIV>
+                    <P></P>
+                    <p>Phone: +84918584119</p>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>TOUR DU LỊCH</h4>
+                <DIV>
+                    <P></P>
+                    <p>Nội tỉnh</p>
+                    <p>Liên tỉnh</p>
+                </DIV>
+            </div>
+        </div>
+    </footer>
+<!--end footer-->
+</body>
+</html>

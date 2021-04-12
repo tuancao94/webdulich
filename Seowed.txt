@@ -1,0 +1,24 @@
+1.T?i uu URL
+	Url ch?a t? khóa chính (có lu?ng search cao nh?t)
+        Càng ng?n càng t?t (nhung ph?i gi? dúng nghia, d? d?c, d? nh?)
+2.T?i uu tiêu d?
+	Tiêu d? và H1 c?a bài vi?t không du?c trùng nhau.
+        Tiêu d? t?i da 65 ký t? và H1 ch?a t?i da 70 ký t?.
+        Tiêu d?/ H1 nên ch?a keyword có lu?ng search cao th? 2.
+        T? khóa nên n?m d?u dòng c?a tiêu d?/ H1
+3. T?i uu Subheading (H2, H3, H4, …)
+        Dùng subheading d? làm rõ nghia cho bài vi?t.
+        Các th? H2 h? tr? làm rõ nghia (support) cho H1, H3 support cho H2, H4 support cho H3, …
+       Nên in d?m các subheading và chèn LSI keywords vào các subheading
+       M?t subheading nh? không ch?a quá 300 ch?.
+4. Seo b?ng th? meta
+-Th? meta Description (th? mô t?): Th? mô t? du?c dùng cho m?t m?c dích chính là mô t? khái quát 
+trang cho ngu?i dùng khi h? d?c trang qua SERP.Quy?t d?nh ngu?i dùng có click vào k?t qu? c?a b?n không.
+ N?i dung ph?n mô t? ch? nên dài 160 ký t? và vi?t n?i dung sao cho thu hút du?c s? chú ý c?a ngu?i dùng
+
+-Viewport (ch? d? xem): Trong th? gi?i di d?ng ngày nay, b?n ph?i xác d?nh c? th? ch? d? xem. N?u b?n
+ không làm th?, b?n s? có nguy co mang l?i tr?i nghi?m di d?ng kém ch?t lu?ng.
+5.Th? Tittle 
+	Th? tiêu d? là c?a m?t trang web, du?c hi?n th? trên trang k?t qu? tìm ki?m cùng th? mô t?
+        Description, thông tin c?a Seo Title giúp ngu?i tìm ki?m quy?t d?nh có click d? t?i trang hay không 
+        do v?y th? tiêu d? nên mô t? ng?n g?n, súc tích và ch?a c?m t? quan tr?ng nh?t c?a trang web dó,

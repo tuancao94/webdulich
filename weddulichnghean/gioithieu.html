@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139594053-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139594053-1');
+</script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Giới thiệu du lịch nghệ an</title>
+    <!--css-->
+    <link href="css/style.css" rel="stylesheet" >
+    <link href='http://fonts.googleapis.com/css?family=Tinos:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+
+            color: #f29000;
+        }
+
+
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+              nav.navbar.navbar-default {
+        margin-left: 0px;
+}
+
+}
+             #background {
+        background-image: url("http://dulichcualonghean.com/wp-content/uploads/2019/02/quy-hoach-vinh-cua-lo-1060x500.jpg");
+        height: 30em;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+        .btn {
+            background: none;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 14px;
+            border: 2px solid #ff9900;
+            padding: 7px 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 10px 0 0;
+            border-radius: 0px
+        }
+        .btn:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: #ff9900;
+        }
+        li:hover > a {
+            text-decoration: none;
+        }
+        .header-grid ul li {
+            display: inline-block;
+            color: #656565;
+            margin-top: 7px;
+        }
+        .header-grid ul li a {
+            color: #2b62ae;
+            font-size: 14px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .header-grid ul li label {
+            color: #6e6586;
+            font-size: 13px;
+            margin: 0 10px;
+            font-weight: 300;
+            height: 18px;
+            position: relative;
+            top: -2px;
+        }
+        .header-grid ul li.dv-mem-login {
+            display: inline-block !important;
+        }
+        .dv-mem-login {
+            position: relative;
+            display: inline-block;
+        }
+        .glo-dangky-gruop {
+            display: inline-block;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0px;
+        }
+        .dv-mem-login .glo-dangky-gruop li a, .mem_active {
+            border-left: 1px solid #ccc;
+            padding-left: 15px;
+            margin: 0px 0 0px 15px;
+            display: inline-block;
+            line-height: 1;
+            color: #333;
+        }
+        .cart {
+            margin-top: 15px;
+            position: relative;
+            float: right;
+            padding-right: 15px;
+        }
+        a.cart-in {
+            width: 40px;
+            height: 37px;
+            background: url(images/img-sprite.png) 0px 0px;
+            display: block;
+            text-decoration: none;
+        }
+        .cart span {
+            background: #ff9900;
+            border-radius: 100px;
+            color: #fff;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            display: block;
+            top: -12px;
+            right: 0;
+            position: absolute;
+            text-align: center;
+            line-height: 30px;
+        }
+        .search-top {
+            margin-top: 10px;
+        }
+        .search {
+            margin: 10px 20px 0 0;
+            position: relative;
+            background: #dadada;
+            padding: 5px 0px;
+            width: 80%;
+            float: right;
+            max-width: 300px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .search input[type="text"] {
+            outline: none;
+            padding: 4px 15px;
+            background: none;
+            width: 79.33%;
+            border: none;
+            font-size: 14px;
+            color: #383838;
+            font-weight: 500;
+        }
+        .search input[type="button"] {
+            width: 60px;
+            background: #2b62ae url(images/img-sprite.png) -48px 4px no-repeat;
+            background-size: auto auto;
+            padding: 4px 10px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            outline: none;
+            top: 0;
+            display: block;
+            right: 0;
+            height: 38px;
+            background-size: 890px auto;
+        }
+        .search-in {
+    float: right;
+    margin-bottom: 19px;
+}
+.header-bottom-bottom {
+    border-top: 4px solid #2b62ae;
+}
+        #myTopnav ul li a {
+            display: block;
+        }
+        #myTopnav ul li .sub-menu{
+            display: none ;
+        }
+        #myTopnav ul li:hover .sub-menu{
+            display: block ;
+        }
+        .zxc,h3,h2 {
+    
+    color: #2b62ae;
+    font-family: auto;
+    font-size: 22px;
+    font-weight: 600;
+}
+h4{
+     color: #2b62ae;
+    font-family: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn{
+        border: 2px solid #3F51B5;
+}
+.navbar  a {
+    font-size: 15px;
+    font-family: auto;
+    font-weight: 600;
+}
+.navbar li:hover{
+    background-color: #d2a82a;
+}
+.titile {
+    color: #2b62ae;
+    font-size: 17px;
+}
+.products-in-news3:hover{
+    background-color: #2b62ae;
+    color: white;
+}
+.tag_link li a:hover {
+    background-color: #2b62ae;
+    color: white;
+}
+div.navigation {
+    padding-bottom: 15px;
+    text-align: center;
+    margin: 0 0 10px;
+    font-size: 16px;
+}
+div.navigation span.current {
+    padding: 0 10px;
+    color: #000;
+}
+div.navigation a {
+    font-weight: normal;
+    padding: 0 10px;
+    line-height: 35px;
+}
+h3.recent_title {
+    margin: 0 0 25px;
+    font-size: 14px;
+    color: #2b62ae;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 0px 0 #F3F3F3;
+}
+.zxc, h3, h2 {
+    color: #2b62ae;
+    font-family: auto;
+    font-size: 17px;
+    font-weight: 600;
+     border-bottom: 1PX solid #d0c9c9;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 6px;
+    clear: both;
+    font-weight: 600;
+    color: #2b62ae;
+    border-bottom: 1px solid #2b62ae;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #2c63af;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    margin-left: -89px;
+    padding-right: 0px;
+    border-bottom: 3px solid #2b62ae;
+}
+.nav>li {
+    margin-right: 5px;
+}
+
+
+    </style>
+</head>
+<body><!--header-->
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="logo" style="float: left;">
+                <a href="#"><img alt="#" class="img_logo"  style="max-width: 100% !important;
+
+                height: 80px !important;" src="http://dulichnghean.gov.vn/images/2016/v-logo-nghean.png"></a>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="search-in">
+                <div class="header-grid">
+                    <ul>
+                        <li class="in-up">Hotline: <a href="tel:0918584119" class="scroll">0918584119</a> <label>|</label></li>
+                        <li class="in-up">Email: <a href="mailto:web@pavietnam.vn" class="scroll">web@pavietnam.vn</a> </li>
+                        <li class="dv-mem-login" style="display: none">
+                            <div class="glo-dangky-gruop">
+                                <ul>
+                                    <li><a href="dangnhap.html" onclick="ShowHidden('id_mem_login'); return false;" class="mem memdn">Đăng nhập</a></li>
+                                    <li><a href="dangki.html" class="mem memdk">Đăng ký</a></li>
+                                </ul>
+                              
+                            </div>                      </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-cart">
+                
+                    <div class="search-top">
+                        <div class="search">
+                            <input type="text" class="key_timkiem" value="Nhập từ khóa tìm kiếm..." onfocus="if (this.value == 'Nhập từ khóa tìm kiếm...'){this.value='';}" onblur="if (this.value == '') {this.value='Nhập từ khóa tìm kiếm...';}">
+                            <input type="button" value="Search" onclick="SEARCH_btn()">
+                        
+                        </div>
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--header-->
+<!--menu-->
+ <nav class="navbar navbar-default" role="navigation">
+
+    <div class="container">
+
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+
+          <span class="sr-only">Toggle navigation</span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="khachsan.html">KHÁCH SẠN</a></li>
+                <li><a href="amthuc.html">ẨM THỰC</a></li>
+                <li><a href="camnang.html">CẨM NANG</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TOUR NGHỆ AN
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">NGHE AN 2 NGAY</a></li>
+                      <li><a href="#">NGHE AN 3 NGAY</a></li>
+                      <li><a href="#">NGHE AN-ĐÀ NẴNG</a></li>
+                      <li><a href="#">CỬA LÒ-BÃI LỮ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">TIN TỨC SỰ KIỆN</a></li>
+                 <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+<!--end menu-->
+<DIV CLASS="container" style="margin-bottom: 30px">
+    <div class="row">
+        <div class="col-md-9">
+            <h3> GIỚI THIỆU</h3>
+            <div style="text-align: justify;"><strong>Nghệ An </strong>l&agrave; một v&ugrave;ng địa linh nh&acirc;n kiệt. Nơi đ&acirc;y kh&ocirc;ng chỉ c&oacute; thi&ecirc;n nhi&ecirc;n h&ugrave;ng vĩ, tr&aacute;ng lệ v&agrave; n&ecirc;n thơ m&agrave; con người cũng rất đỗi h&agrave;o hoa v&agrave; anh h&ugrave;ng. Đến &nbsp;với <strong>Nghệ An</strong> bạn kh&ocirc;ng chỉ được ngắm biển tr&ocirc;ng non, được kh&aacute;m ph&aacute; những c&aacute;nh rừng nguy&ecirc;n sinh P&ugrave; M&aacute;t, P&ugrave; Huống, được tắm biển Cửa L&ograve;, Quỳnh Phương,Diễn Ch&acirc;u, Nghi Thiết m&agrave; c&ograve;n được chi&ecirc;m ngưỡng rất nhiều c&aacute;c di t&iacute;ch lịch sử văn ho&aacute; - dấu ấn của biết bao sự kiện lịch sử v&agrave; gi&aacute; trị văn ho&aacute; do người xứ Nghệ<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><strong>C&aacute;c điểm du lịch nổi bật ở Nghệ An<br />
+            <br type="_moz" />
+            </strong></div>
+            <div style="text-align: justify;">Nằm c&aacute;ch thủ đ&ocirc; H&agrave; Nội 291km về ph&iacute;a Nam, Nghệ An chi&ecirc;u đ&atilde;i du kh&aacute;ch với mọi loại h&igrave;nh du lịch đ&aacute;p ứng tất cả c&aacute;c nhu cầu của du kh&aacute;ch như du lịch t&acirc;m linh, du lịch nghỉ dưỡng, du lịch kh&aacute;m ph&aacute;, du lịch biển, rừng&hellip;<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Khu du lịch sinh th&aacute;i Sen V&agrave;ng:</strong></em></div>
+            <div style="text-align: justify;"><em><strong><br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/du-lich-sinh-thai-sen-vang-nghe-an.jpg" alt="Du lịch sinh th&aacute;i Sen V&agrave;ng Nghệ An" width="450" height="320" title="Du lịch sinh th&aacute;i Sen V&agrave;ng Nghệ An" /><br />
+            <br type="_moz" />
+            &nbsp;</div>
+            <div style="text-align: justify;">Từ Vinh, ra Bắc 40km bằng đường bộ, bạn sẽ được h&ograve;a m&igrave;nh với thi&ecirc;n nhi&ecirc;n ở khu du lịch sinh th&aacute;i Sen V&agrave;ng hay thả m&igrave;nh ở ba trong số h&agrave;ng loạt c&aacute;c b&atilde;i biển đẹp, nổi tiếng của Nghệ An l&agrave; biển Diễn Th&agrave;nh, biển Diễn Ch&acirc;u, th&uacute; vị nhất l&agrave; B&atilde;i Lữ vừa thơ mộng vừa hoang sơ.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Đền Cu&ocirc;ng:<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/den-cuong-nghe-an.jpg" alt="Đền Cu&ocirc;ng Nghệ An" width="450" height="289" title="Đền Cu&ocirc;ng Nghệ An" /><br />
+            &nbsp;</div>
+            <div style="text-align: justify;">B&ecirc;n cạnh c&aacute;c b&atilde;i biển tr&ecirc;n, bạn c&oacute; thể thăm th&uacute; di t&iacute;ch như Đền Cu&ocirc;ng tr&ecirc;n n&uacute;i Mộ Dạ, nơi Thục ph&aacute;n An Dương Vương tuẫn tiết, được ch&ocirc;n cất lập đền thờ. Tr&ecirc;n n&uacute;i c&ograve;n c&oacute; giếng Ngọc Mỵ Ch&acirc;u; gh&eacute; khu sinh th&aacute;i Diễn L&acirc;m nơi, vườn b&aacute;ch th&uacute; với nhiều động vật hiếm hay Hồ Xu&acirc;n Hương rừng th&ocirc;ng soi b&oacute;ng xuống hồ (lưu &yacute; kh&ocirc;ng tắm tại hồ).<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Biển Xu&acirc;n Th&agrave;nh:<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/bien-xuan-thanh-nghe-an.jpg" alt="biền Xu&acirc;n Th&agrave;nh Nghệ An" width="450" height="300" title="biền Xu&acirc;n Th&agrave;nh Nghệ An" /><br />
+            &nbsp;</div>
+            <div style="text-align: justify;">C&aacute;c danh thắng của hướng Nam từ Vinh bắt đầu bằng b&atilde;i biển Xu&acirc;n Th&agrave;nh với vẻ đẹp của triền c&aacute;t thoai thoải, nước trong, những h&agrave;ng dương ng&uacute;t ng&agrave;n; Khu di t&iacute;ch đại thi h&agrave;o d&acirc;n tộc Nguyễn Du th&acirc;m nghi&ecirc;m, b&iacute; ẩn. H&agrave;nh tr&igrave;nh ngược s&ocirc;ng La kỳ th&uacute; để đến với di t&iacute;ch v&agrave; lăng mộ Tổng b&iacute; thư Trần Ph&uacute;, ngắm bến Tam Soa thơ mộng, nghe những c&acirc;u h&aacute;t điệu h&ograve; bảng lảng tr&ecirc;n s&ocirc;ng.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Biển Cửa L&ograve;:<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/bien-cua-lo-nghe-an.jpg" alt="Biền Cửa L&ograve; Nghệ An" width="450" height="270" title="Biền Cửa L&ograve; Nghệ An" /><br />
+            <br type="_moz" />
+            &nbsp;</div>
+            <div style="text-align: justify;">Ph&iacute;a Đ&ocirc;ng th&agrave;nh phố Vinh l&agrave; Cửa L&ograve;, một thị x&atilde; sấm uất v&agrave; một b&atilde;i biển tuyệt đẹp. Nơi bất kỳ du kh&aacute;ch thuộc v&ugrave;ng miền n&agrave;o cũng muốn một lần đặt ch&acirc;n đến. Tại Cửa L&ograve;, ngo&agrave;i th&uacute; vui tắm biển, thưởng thức hải sản, th&igrave; &ldquo;đặc sản&rdquo; c&acirc;u v&agrave; thưởng thức mực nhảy cũng l&ocirc;i cuốn kh&ocirc;ng k&eacute;m.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Địa danh qu&ecirc; hương B&aacute;c<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/que-bac-nghe-an.jpg" alt="qu&ecirc; b&aacute;c Nghệ An" width="450" height="299" title="qu&ecirc; b&aacute;c Nghệ An" /><br />
+            &nbsp;</div>
+            <div style="text-align: justify;">C&aacute;ch th&agrave;nh phố Vinh 10km về ph&iacute;a T&acirc;y, bạn sẽ đến với qu&ecirc; hương của chủ tịch Hồ Ch&iacute; Minh, tham quan nơi B&aacute;c lớn l&ecirc;n hay thắp một n&eacute;n nhang tưởng nhớ ở mộ b&agrave; Nguyễn Thị Loan &ndash; Th&acirc;n sinh B&aacute;c. Ngo&agrave;i l&agrave; qu&ecirc; hương B&aacute;c, nơi đ&acirc;y cũng khai sinh ra h&agrave;ng loạt c&aacute;c nh&agrave; ch&iacute; sỹ y&ecirc;u nước Phan Bội Ch&acirc;u, L&ecirc; Hồng Sơn, Tổng b&iacute; thư L&ecirc; Hồng Phong&hellip;<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Du lịch t&acirc;m linh:<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/den-quan-hoang-muoi-nghe-an.jpg" alt="đền Quan Ho&agrave;ng Mười Nghệ An" width="450" height="300" title="đền Quan Ho&agrave;ng Mười Nghệ An" /><br />
+            &nbsp;</div>
+            <div style="text-align: justify;">B&ecirc;n cạnh du lịch lịch sử, cụm du lịch ph&iacute;a T&acirc;y của Vinh cũng chiều l&ograve;ng du kh&aacute;ch với hai điểm du lịch t&acirc;m linh l&agrave; quảng trường Hồ Ch&iacute; Minh, đền thờ &ndash; lăng mộ Quan Ho&agrave;ng Mười v&agrave; du lịch kh&aacute;m ph&aacute; với vườn quốc gia P&ugrave; M&aacute;t, nơi c&oacute; nhiều động vật qu&yacute; v&agrave; những d&ograve;ng th&aacute;c h&ugrave;ng vĩ.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;">Ngo&agrave;i ra, nếu c&oacute; thời gian, bạn đừng qu&ecirc;n kh&aacute;m ph&aacute; h&agrave;ng loạt địa danh kh&aacute;c của v&ugrave;ng đất n&agrave;y như chợ v&ugrave;ng bi&ecirc;n Nậm Cắn, th&aacute;c Xao Va, hang Thẩm Ồm, khu du lịch n&uacute;i Quyết; Th&agrave;nh cổ Nghệ An, ch&ugrave;a Sư Nữ (ch&ugrave;a Cần Linh), đền Hồng Sơn, đền Quả Sơn, khu du lịch hồ Cửa Nam, bảo t&agrave;ng X&ocirc; Viết Nghệ Tĩnh.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><strong>Địa l&yacute; v&agrave; kh&iacute; hậu Nghệ An<br />
+            <br type="_moz" />
+            </strong></div>
+            <div style="text-align: justify;">Nghệ An thuộc v&ugrave;ng Bắc Trung Bộ. Ph&iacute;a bắc gi&aacute;p tỉnh Thanh H&oacute;a, ph&iacute;a nam gi&aacute;p tỉnh H&agrave; Tĩnh, ph&iacute;a đ&ocirc;ng gi&aacute;p biển Đ&ocirc;ng, ph&iacute;a t&acirc;y bắc gi&aacute;p tỉnh Huaphanh (L&agrave;o), ph&iacute;a t&acirc;y gi&aacute;p tỉnh Xiengkhuang (L&agrave;o), ph&iacute;a t&acirc;y nam gi&aacute;p tỉnh Borikhamxay (L&agrave;o).<span class="Apple-tab-span" style="white-space:pre">  <br />
+            </span></div>
+            <div style="text-align: justify;">Nghệ An nằm trong v&ugrave;ng kh&iacute; hậu nhiệt đới gi&oacute; m&ugrave;a, c&oacute; 4 m&ugrave;a r&otilde; rệt: xu&acirc;n, hạ, thu, đ&ocirc;ng. Từ th&aacute;ng 4 đến th&aacute;ng 8 dương lịch h&agrave;ng năm, tỉnh chịu ảnh hưởng của gi&oacute; phơn t&acirc;y nam kh&ocirc; v&agrave; n&oacute;ng. V&agrave;o m&ugrave;a đ&ocirc;ng, chịu ảnh hưởng của gi&oacute; m&ugrave;a đ&ocirc;ng bắc lạnh v&agrave; ẩm ướt.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><strong>Phương tiện ở Nghệ An<br />
+            <br type="_moz" />
+            </strong></div>
+            <div style="text-align: justify;">T&ugrave;y theo điểm xuất ph&aacute;t m&agrave; bạn c&oacute; thể chọn 3 th&agrave;nh phố lớn đại diện cho 3 v&ugrave;ng để l&agrave;m điểm trung chuyển đến Nghệ An l&agrave; H&agrave; Nội, Đ&agrave; Nẵng v&agrave; S&agrave;i G&ograve;n. Nếu th&iacute;ch, c&aacute;c bạn ở miền Trung v&agrave; miền Nam c&oacute; thể chọn H&agrave; Nội l&agrave;m điểm xuất ph&aacute;t hay chọn c&aacute;ch mua v&eacute; đi Nghệ An tại địa phương.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em>Bằng phương tiện c&ocirc;ng cộng</em> Bạn c&oacute; thể đến Nghệ An bằng xe kh&aacute;ch (mua tại c&aacute;c bến xe), t&agrave;u lửa (mua tại c&aacute;c ga) v&agrave; m&aacute;y bay (mua tại c&aacute;c đại l&yacute; v&eacute; m&aacute;y bay). Mỗi phương tiện c&oacute; lịch tr&igrave;nh kh&aacute;c nhau, mức gi&aacute; kh&aacute;c nhau, điểm đến kh&aacute;c nhau, bạn n&ecirc;n l&ecirc;n lịch tr&igrave;nh, khả năng t&agrave;i ch&iacute;nh trước khi mua v&eacute;. Đến Nghệ An bạn c&oacute; thể thu&ecirc; xe &ocirc;m, xe m&aacute;y hay taxi kh&aacute;m ph&aacute; c&aacute;c điểm.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em>Bằng phương tiện c&aacute; nh&acirc;n</em> H&agrave; Nội c&aacute;ch th&agrave;nh phố Vinh 291km, khoảng c&aacute;ch tương đối để bạn c&oacute; thể phượt bằng xe m&aacute;y hay xe &ocirc; t&ocirc; m&agrave; kh&ocirc;ng lo ảnh hưởng đến sức khỏe, thời gian. S&agrave;i G&ograve;n hay Đ&agrave; Nẵng đều kh&aacute; xa &ldquo;v&ugrave;ng đất học&rdquo;, n&ecirc;n nếu kh&ocirc;ng c&oacute; kế hoạch lang thang h&agrave;ng loạt tỉnh, tốt nhất bạn n&ecirc;n di chuyển bằng phương tiện c&ocirc;ng cộng để bảo đảm an to&agrave;n cũng như khỏi mệt mỏi v&igrave; chạy xe qu&aacute; nhiều.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><strong>Ẩm thực ở Nghệ An<br />
+            <br type="_moz" />
+            </strong></div>
+            <div style="text-align: justify;">Đặc sản Nghệ An gồm những m&oacute;n như ch&aacute;o lươn Vinh, cơm lam, nh&uacute;t Thanh Chương, tương Nam Đ&agrave;n, cam x&atilde; Đo&agrave;i...<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>L&agrave;ng nghề nước mắm Nghi Hải<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: justify;">C&aacute;ch Th&agrave;nh phố Vinh 11km về ph&iacute;a Đ&ocirc;ng, l&agrave; L&agrave;ng nghề nước mắm Nghi Hải. Đặc th&ugrave; ở l&agrave;ng nghề n&agrave;y l&agrave; c&aacute;c chủ cơ sở kinh doanh v&agrave; khai th&aacute;c v&agrave; chế biến nước mắm. Sản phẩm l&agrave;ng nghề ở đ&acirc;y l&agrave; c&aacute;c h&agrave;ng chế biến từ hải sản như: C&aacute;, t&ocirc;m, v&agrave; c&aacute;c loại kh&aacute;c.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Ch&aacute;o Lươn Vinh<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: center;"><img src="https://www.dulichvietnam.com.vn/data/chao-luon-nghe-an.jpg" alt="Ch&aacute;o lươn Nghệ An" width="450" height="284" title="Ch&aacute;o lươn Nghệ An" /><br />
+            &nbsp;</div>
+            <div style="text-align: justify;">Kh&ocirc;ng chỉ người d&acirc;n ở Nghệ An th&iacute;ch ăn ch&aacute;o lươn Vinh, m&agrave; cả những du kh&aacute;ch từ nhiều nơi khi đến Vinh đều ưa th&iacute;ch m&oacute;n ch&aacute;o lươn.&nbsp;<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Tương Nam Đ&agrave;n<br />
+            <br type="_moz" />
+            </strong></em></div>
+            <div style="text-align: justify;">Tương Nam Đ&agrave;n nổi tiếng kh&ocirc;ng chỉ ở Nghệ An m&agrave; khắp cả nước. L&agrave; thực phẩm được d&ugrave;ng l&agrave;m nước chấm, nước chan với cơm, rất phổ biến ở trong bữa ăn của c&aacute;c gia đ&igrave;nh ở huyện Nam Đ&agrave;n, được chế biến từ những hạt đậu tương v&agrave; những hạt nếp, hạt ng&ocirc; do người n&ocirc;ng d&acirc;n l&agrave;m ra.<br />
+            &nbsp;</div>
+            <div style="text-align: justify;"><em><strong>Cam x&atilde; Đo&agrave;i</strong></em><br />
+            <br />
+            X&atilde; Đo&agrave;i nay l&agrave; x&atilde; Nghi Di&ecirc;n - Huyện Nghi Lộc - Tỉnh Nghệ An. Tại đ&acirc;y, thi&ecirc;n nhi&ecirc;n đ&atilde; ưu đ&atilde;i cho một miền đất hiếm hoi sản sinh ra quả cam thơm ngon m&agrave; chẳng nơi n&agrave;o c&oacute; được<br />
+            <br />
+            <br />
+            &nbsp;</div>
+        </div>
+
+        <div class="col-md-3">
+            <h3 class="titile">
+                KHÁM PHÁ NGHỆ AN
+            </h3>
+            <div class="products-in-news4">
+                <UL CLASS="product-in-news" >
+                    <li class="" >
+                        <a  class="products-in-news3" href="vegatables.html">
+                        Điều kiện tự nhiên
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="cereal.html">
+                            Cơ sở hạ tầng
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="beans.html">
+                            Tiềm năng du lịch
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="vegatables.html">
+                            Văn hóa
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="cereal.html">
+                            Lễ hội
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="beans.html">
+                            Tậpp huấn,Đào tạo
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+                </UL>
+            </div>
+            <div class="hot-news">
+                <h3 class="titile">
+                    TIN TỨC HOT
+                </h3>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/00000000000000fesybvallangnghe.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Cháo lươn, giò bê Nghệ An hút khách ở Festival Huế dịp lễ</b>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/12/CL123.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Nghệ An đón hàng chục vạn lượt du khách trong 3 ngày đầu nghỉ lễ 30/4 và 1/5</b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/KC/19(2).jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Khám phá sông Giăng vào Hạ tấp nập khách du lịch</b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/KC/6(6).jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Những hình ảnh lấp lánh tuyệt đẹp của biển Cửa Lò khiến bạn muốn đến </b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="tags " >
+                <H3 CLASS="titile">
+                    TAGS
+                </H3>
+                <ul class="tag_link" >
+                    <li>
+                        <a href="#">Đi đâu</a>
+                    </li>
+                    <li>
+                        <a href="#">Nhà hàng đặc sản địa phương</a>
+                    </li>
+                    <li>
+                        <a href="#">Ở đâu</a>
+                    </li>
+                    <li>
+                        <a href="#">Ăn gì</a>
+                    </li>
+                    <li>
+                        <a href="#">Chơi gì</a>
+                    </li>
+                    <li>
+                        <a href="#">Tour du lịch nổi bật</a>
+                    </li>
+                    <li>
+                        <a href="#">Lữ hành</a>
+                    </li>
+                    <li>
+                        <a href="#">Vận chuyển</a>
+                    </li>
+                    <li>
+                        <a href="#">Xuất nhập cảnh</a>
+                    </li>
+                    <li>
+                        <a href="#">Công an</a>
+                    </li>
+                    <li>
+                        <a href="#">Bệnh viện</a>
+                    </li>
+                    <li>
+                        <a href="#">Thông tin liên lạc</a>
+                    </li>
+                    <li>
+                        <a href="#">Đường dây nóng</a>
+                    </li>
+                    <li>
+                        <a href="#">Ngân hàng-ATM</a>
+                    </li>
+                    <li>
+                        <a href="#">Ta xi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+</DIV>
+
+<!--scrool to top-->
+<div class="container" >
+    <a href="#top" class="to-top"  ><i class="glyphicon glyphicon-chevron-up" ></i></a>
+</div>
+<script>
+    $(document).ready(function (){
+        var offset=167;
+
+        $(window).scroll(function (){
+            if($(this).scrollTop() > offset){
+                $('.to-top').fadeIn();
+            }
+            else{
+                $('.to-top').fadeOut();
+            }
+        });
+
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop: 0}, 1000)
+        })
+    });
+</script>
+<!--scrool to top-->
+<!--footer-->
+<footer>
+        <div class="container">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>CƠ QUAN CHỦ QUẢN</h4>
+                <DIV>
+                    <P>Adrees: 38 Quang Trung street,Lê Lợi District, Vinh city, Vietnam.</P>
+                    <p>Phone: +84918584119</p>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>THỜI GIAN HOẠT ĐỘNG</h4>
+                <DIV>
+                    <ul>
+                        <li>Mon - Fri: 7am to 8pm</li>
+                        <li>Sat & Sun: 7am to 6pm</li>
+                    </ul>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <DIV>
+                    <P></P>
+                    <p>Phone: +84918584119</p>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>TOUR DU LỊCH</h4>
+                <DIV>
+                    <P></P>
+                    <p>Nội tỉnh</p>
+                    <p>Liên tỉnh</p>
+                </DIV>
+            </div>
+        </div>
+    </footer>
+<!--end footer-->
+</body>
+</html>

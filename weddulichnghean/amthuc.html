@@ -1,0 +1,827 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139594053-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-139594053-1');
+</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Ẩm thực Nghệ AN</title>
+    <!--css-->
+    <meta name="description"  content="ẩm thực cửa lò: chả mực cửa lò,cháo lươn nghệ an,bánh mướt xứ nghệ" />
+    <link href="css/style.css" rel="stylesheet" >
+    <link href='http://fonts.googleapis.com/css?family=Tinos:400,700|Merriweather:400,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+
+
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+
+            color: #f29000;
+        }
+
+
+
+        .topnav .icon {
+            display: none;
+        }
+
+
+        @media screen and (max-width: 768px) {
+              nav.navbar.navbar-default {
+        margin-left: 0px;
+}
+    }
+
+        .btn {
+            background: none;
+            display: inline-block;
+            outline: none;
+            text-decoration: none;
+            color: #2d2d2d;
+            font-size: 14px;
+            border: 2px solid #ff9900;
+            padding: 7px 16px;
+            font-weight: 500;
+            text-transform: capitalize;
+            letter-spacing: 1px;
+            margin: 10px 0 0;
+            border-radius: 0px
+        }
+        .btn:hover {
+            color: #fff;
+            text-decoration: none;
+            background-color: #ff9900;
+        }
+        li:hover > a {
+            text-decoration: none;
+        }
+        .header-grid ul li {
+            display: inline-block;
+            color: #656565;
+            margin-top: 7px;
+        }
+        .header-grid ul li a {
+            color: #2b62ae;
+            font-size: 14px;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+        .header-grid ul li label {
+            color: #6e6586;
+            font-size: 13px;
+            margin: 0 10px;
+            font-weight: 300;
+            height: 18px;
+            position: relative;
+            top: -2px;
+        }
+        .header-grid ul li.dv-mem-login {
+            display: inline-block !important;
+        }
+        .dv-mem-login {
+            position: relative;
+            display: inline-block;
+        }
+        .glo-dangky-gruop {
+            display: inline-block;
+        }
+        ul {
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0px;
+        }
+        .dv-mem-login .glo-dangky-gruop li a, .mem_active {
+            border-left: 1px solid #ccc;
+            padding-left: 15px;
+            margin: 0px 0 0px 15px;
+            display: inline-block;
+            line-height: 1;
+            color: #333;
+        }
+        .cart {
+            margin-top: 15px;
+            position: relative;
+            float: right;
+            padding-right: 15px;
+        }
+        a.cart-in {
+            width: 40px;
+            height: 37px;
+            background: url(images/img-sprite.png) 0px 0px;
+            display: block;
+            text-decoration: none;
+        }
+        .cart span {
+            background: #ff9900;
+            border-radius: 100px;
+            color: #fff;
+            font-size: 16px;
+            width: 30px;
+            height: 30px;
+            display: block;
+            top: -12px;
+            right: 0;
+            position: absolute;
+            text-align: center;
+            line-height: 30px;
+        }
+        .search-top {
+            margin-top: 10px;
+        }
+        .search {
+            margin: 10px 20px 0 0;
+            position: relative;
+            background: #dadada;
+            padding: 5px 0px;
+            width: 80%;
+            float: right;
+            max-width: 300px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .search input[type="text"] {
+            outline: none;
+            padding: 4px 15px;
+            background: none;
+            width: 79.33%;
+            border: none;
+            font-size: 14px;
+            color: #383838;
+            font-weight: 500;
+        }
+        .search input[type="button"] {
+            width: 60px;
+            background: #2b62ae url(images/img-sprite.png) -48px 4px no-repeat;
+            background-size: auto auto;
+            padding: 4px 10px;
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            outline: none;
+            top: 0;
+            display: block;
+            right: 0;
+            height: 38px;
+            background-size: 890px auto;
+        }
+        .search-in {
+    float: right;
+    margin-bottom: 19px;
+}
+.header-bottom-bottom {
+    border-top: 4px solid #2b62ae;
+}
+        #myTopnav ul li a {
+            display: block;
+        }
+        #myTopnav ul li .sub-menu{
+            display: none ;
+        }
+        #myTopnav ul li:hover .sub-menu{
+            display: block ;
+        }
+        .zxc,h3,h2 {
+    
+    color: #2b62ae;
+    font-family: auto;
+    font-size: 22px;
+    font-weight: 600;
+}
+h4{
+     color: #2b62ae;
+    font-family: auto;
+    font-size: 20px;
+    font-weight: 600;
+}
+.btn{
+        border: 2px solid #3F51B5;
+}
+.navbar  a {
+    font-size: 15px;
+    font-family: auto;
+    font-weight: 600;
+}
+.navbar li:hover{
+    background-color: #d2a82a;
+}
+.titile {
+    color: #2b62ae;
+    font-size: 17px;
+}
+.products-in-news3:hover{
+    background-color: #2b62ae;
+    color: white;
+}
+.tag_link li a:hover {
+    background-color: #2b62ae;
+    color: white;
+}
+h3.recent_title {
+    margin: 0 0 25px;
+    font-size: 17px;
+    color: #2f58a7;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0px 4px 0px 0 #F3F3F3;
+}
+.entry-title a{
+    font-size: 20px;
+}
+.dropdown-menu>li>a {
+    display: block;
+    padding: 3px 6px;
+    clear: both;
+    font-weight: 600;
+    color: #2b62ae;
+    border-bottom: 1px solid #2b62ae;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #2c63af;
+}
+.navbar-default {
+    background-color: #f8f8f8;
+    margin-left: -90px;
+    padding-right: 0px;
+    border-bottom: 3px solid #2b62ae;
+}
+.nav>li {
+    margin-right: 5px;
+}
+    </style>
+
+</head>
+<body><!--header-->
+<div class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-sm-12 col-xs-12">
+                <div class="logo" style="float: left;">
+                <a href="#"><img alt="#" class="img_logo"  style="max-width: 100% !important;
+
+                height: 80px !important;" src="http://dulichnghean.gov.vn/images/2016/v-logo-nghean.png"></a>
+                </div>
+            </div>
+            <div class="col-md-7 col-sm-12 col-xs-12">
+                <div class="search-in">
+                <div class="header-grid">
+                    <ul>
+                        <li class="in-up">Hotline: <a href="tel:0918584119" class="scroll">0918584119</a> <label>|</label></li>
+                        <li class="in-up">Email: <a href="mailto:web@pavietnam.vn" class="scroll">web@pavietnam.vn</a> </li>
+                        <li class="dv-mem-login" style="display: none">
+                            <div class="glo-dangky-gruop">
+                                <ul>
+                                    <li><a href="dangnhap.html" onclick="ShowHidden('id_mem_login'); return false;" class="mem memdn">Đăng nhập</a></li>
+                                    <li><a href="dangki.html" class="mem memdk">Đăng ký</a></li>
+                                </ul>
+                                
+                            </div>                      </li>
+                        <li>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content-cart">
+                
+                    <div class="search-top">
+                        <div class="search">
+                            <input type="text" class="key_timkiem" value="Nhập từ khóa tìm kiếm..." onfocus="if (this.value == 'Nhập từ khóa tìm kiếm...'){this.value='';}" onblur="if (this.value == '') {this.value='Nhập từ khóa tìm kiếm...';}">
+                            <input type="button" value="Search" onclick="SEARCH_btn()">
+                        
+                        </div>
+                    </div>
+
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--header-->
+<!--menu-->
+ <nav class="navbar navbar-default" role="navigation">
+
+    <div class="container">
+
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse">
+
+          <span class="sr-only">Toggle navigation</span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+          <span class="icon-bar"></span>
+
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse" id="collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+                <li><a href="trangchu.html">TRANG CHỦ</a></li>
+                <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                <li><a href="khachsan.html">KHÁCH SẠN</a></li>
+                <li><a href="amthuc.html">ẨM THỰC</a></li>
+                <li><a href="camnang.html">CẨM NANG</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">TOUR NGHỆ AN
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">NGHE AN 2 NGAY</a></li>
+                      <li><a href="#">NGHE AN 3 NGAY</a></li>
+                      <li><a href="#">NGHE AN-ĐÀ NẴNG</a></li>
+                      <li><a href="#">CỬA LÒ-BÃI LỮ</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">VIDEO</a></li>
+                <li><a href="#">TIN TỨC SỰ KIỆN</a></li>
+                 <li><a href="#">LIÊN HỆ</a></li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+<!--end menu-->
+<DIV CLASS="container" style="margin-bottom: 30px">
+    <div class="row">
+        <div class="col-md-9">
+          <h3 class="recent_title">
+            ẨM THỰC CỬA LÒ         
+            </h3>
+
+        
+            <div id="recent-posts" class="clearfix">
+
+            <div id="post-319" class="post-319 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/thuong-thuc-mon-ghe-rang-me-khi-toi-cua-lo-nghe-an/" title="Thưởng thức món ghẹ rang me khi tới Cửa Lò Nghệ An"><img src="http://dulichcualonghean.com/wp-content/uploads/2015/05/ghe-hap-me-cua-lo-12.jpg" alt="Thưởng thức món ghẹ rang me khi tới Cửa Lò Nghệ An" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/thuong-thuc-mon-ghe-rang-me-khi-toi-cua-lo-nghe-an/" title="Permalink to Thưởng thức món ghẹ rang me khi tới Cửa Lò Nghệ An" rel="bookmark">Thưởng thức món ghẹ rang me khi tới Cửa Lò Nghệ An</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Cửa Lò Nghệ An vẫn luôn là điểm đến du lịch hè được nhiều du khách lựa chọn. Một trong những điều không thể bỏ qua khi tới đây là thưởng thức các món hải sản biển tươi ngon và ghẹ rang me chính là một món hải sản không thể bỏ qua khi tới Cửa Lò du lịch.</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-319 -->
+
+            <div id="post-273" class="post-273 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/hoc-cach-lam-cua-bien-rang-me-cua-lo/" title="Học cách làm cua biển rang me Cửa Lò"><img src="http://dulichnghean.gov.vn/uploads/image/KC/18(3).jpg" alt="Cua biển rang me Cửa Lò" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/hoc-cach-lam-cua-bien-rang-me-cua-lo/" title="Permalink to Học cách làm cua biển rang me Cửa Lò" rel="bookmark">Tươi ngon đặc sản Tôm Tít biển Nghệ An</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Tôm tít hay còn gọi là bề bề, bọ ngựa biển có giá trị dinh dưỡng rất cao, thịt tôm tít chứa nhiều chất dinh dưỡng như Vitamin A, Vitamin B1, sắt, hàm lượng Omega 3 và Omega 6 cao tốt cho hệ miễn dịch.  [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-273 -->
+
+            <div id="post-268" class="post-268 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-thuong-thuc-moc-cua/" title="Du lịch Cửa Lò thưởng thức mọc cua bể"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/12/moc-cua-be.jpg" alt="Mọc cua bể Cửa Lò" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-thuong-thuc-moc-cua/" title="Permalink to Du lịch Cửa Lò thưởng thức mọc cua bể" rel="bookmark">Du lịch Cửa Lò thưởng thức mọc cua bể</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Biển Cửa Lò được nhắc đến như một biểu tượng du lịch nổi tiếng của mảnh đất xứ Nghệ. Nhưng Cửa Lò không chỉ thu hút du khách bởi vẻ đẹp tiềm ẩn trong nó mà còn bởi những tinh hoa ẩm thực khác biệt của mảnh đất này. Bạn hãy một lần đi du lịch Cửa Lò Nghệ An [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-268 -->
+
+            <div id="post-249" class="post-249 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/thu-vi-bat-canh-ngao-cua-lo/" title="Thú vị bát canh ngao Cửa Lò"><img src="http://streaming1.danviet.vn/upload/1-2019/images/2019-03-06/mien-luon-1551853958-width576height330.jpg" alt="Bát canh ngao Cửa Lò" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/thu-vi-bat-canh-ngao-cua-lo/" title="Permalink to Thú vị bát canh ngao Cửa Lò" rel="bookmark">Trải nghiệm Cháo lươn Xứ Nghệ</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Miến lươn, cháo lươn với những con lươn đồng nhỏ, mình thon, thịt chắc đã được gỡ thịt có màu vàng bắt mắt, ăn có vị ngọt và lạ miệng từ lâu đã là đặc sản níu chân du khách mỗi khi có dịp dừng chân tại xứ Nghệ. [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+            </div><!-- #post-249 -->
+
+            <div id="post-223" class="post-223">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-muc-xao-cay/" title="Du lịch Cửa Lò ăn mực xào cay"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/07/muc-xao-cay-cua-lo.jpg" alt="Du lịch Cửa Lò ăn mực xào cay" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-muc-xao-cay/" title="Permalink to Du lịch Cửa Lò ăn mực xào cay" rel="bookmark">Du lịch Cửa Lò ăn mực xào cay</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Mực xào cay Cửa Lò từ lâu đã làm cho bao du khách du lịch Cửa Lò cảm thấy mê mẩn quên đường về khi thưởng thức nó. Mực xào cay Cửa Lò &#8211; Du lịch Cửa Lò 2019 giá rẻ Biển Cửa Lò– Quê hương Chủ tịch Hồ Chí Minh – Chẳng ở đâu biển lại dịu dàng đến [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-223 -->
+
+            <div id="post-213" class="post-213">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-canh-ngao-nau-dau/" title="Du lịch Cửa Lò &#8211; Canh ngao nấu đậu"><img src="http://streaming1.danviet.vn/upload/1-2019/images/2019-03-06/banh-muot-nghe-an-1551853889-width500height281.jpg" alt="Du lịch Cửa Lò &#8211; Canh ngao nấu đậu" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-canh-ngao-nau-dau/" title="Permalink to Du lịch Cửa Lò &#8211; Canh ngao nấu đậu" rel="bookmark">Trải nghiệm bánh mướt Xứ Nghệ</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Bên cạnh những món chế biến từ lươn vốn đã nổi tiếng, bánh mướt là một đặc sản khác ở Nghệ An. Người sành ăn ở đây thường đến huyện ven biển Diễn Châu – nơi có nhiều gia đình theo nghề làm bánh đã nhiều thế hệ. [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-213 -->
+
+            <div id="post-210" class="post-210 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/tu-hai-hap-dac-san-cat-ba/" title="Tu hài hấp &#8211; Đặc sản Cát Bà"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/06/tu-hai-hap-cat-ba.jpg" alt="Thưởng thức tu hài hấp đặc sản Cát Bà" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/tu-hai-hap-dac-san-cat-ba/" title="Permalink to Tu hài hấp &#8211; Đặc sản Cát Bà" rel="bookmark">Tu hài hấp &#8211; Đặc sản Cát Bà</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Cát Bà là đảo ngọc của miền bắc. Đảo Cát Bà với cảnh vật phong phú thiên nhiên đa dạng. Du lịch đảo Cát Bà tại đây du khách có cơ hội tham quan những thắng cảnh đẹp nơi đây, đắm chìm vào không gian thơ mộng mà hùng vĩ như chốn thần tiên trên vịnh Lan Hạ, ngâm mình vào [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-210 -->
+
+            <div id="post-196" class="post-196">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-phu-quoc-thuong-thuc-goi-ca-trich/" title="Du lịch Phú Quốc thưởng thức gỏi cá trích"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/06/goi-ca-trich.jpg" alt="Gỏi cá trích" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-phu-quoc-thuong-thuc-goi-ca-trich/" title="Permalink to Du lịch Phú Quốc thưởng thức gỏi cá trích" rel="bookmark">Du lịch Phú Quốc thưởng thức gỏi cá trích</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Phú Quốc được mệnh danh là đảo ngọc bởi nơi đây không chỉ có những danh lam thắng cảnh đẹp như tranh khung cảnh thơ mộng làm say đắm lòng người, du lịch Phú Quốc 2016 du khách còn được thưởng thức những món ngon tuyệt vời nơi đây, những đặc sản mang hương vị đặc trưng chỉ có ở [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-196 -->
+
+            <div id="post-180" class="post-180 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-banh-duc-xu-nghe/" title="Du lịch Cửa Lò &#8211; Bánh đúc xứ Nghệ"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/06/banh-duc-cua-lo.jpg" alt="Du lịch Cửa Lò &#8211; Bánh đúc xứ Nghệ" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-banh-duc-xu-nghe/" title="Permalink to Du lịch Cửa Lò &#8211; Bánh đúc xứ Nghệ" rel="bookmark">Du lịch Cửa Lò &#8211; Bánh đúc xứ Nghệ</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Hiện nay , sau bao thăng trầm của lịch sử  Cửa Lò, với người dân xứ Nghệ , bánh đúc vẫn hết mực gần gũi , thân thiết với mỗi người.Kinh nghiệm du lịch khi tới Cửa Lò của tôi là các bạn hãy dành chút thời gian rồi thưởng thức món bánh đúc tại đây nhé ! Bánh đúc [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-180 -->
+
+            <div id="post-152" class="post-152 ">
+
+                <div class="post-thumb"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-dac-san-gi/" title="Du lịch Cửa Lò ăn đặc sản gì?"><img src="http://dulichcualonghean.com/wp-content/uploads/2014/05/muc-nhay-cua-lo.jpg" alt="Đặc sản Cửa Lò- Mực nháy" class="Thumbnail thumbnail loop " width="200" height="150" /></a></div>
+                <div class="post-content">
+
+                    <h2 class="entry-title"><a href="http://dulichcualonghean.com/am-thuc-cua-lo/du-lich-cua-lo-dac-san-gi/" title="Permalink to Du lịch Cửa Lò ăn đặc sản gì?" rel="bookmark">Du lịch Cửa Lò ăn đặc sản gì?</a></h2>
+
+                    <div class="entry entry-content">
+                        <p>Hè 2014 bạn và gia đình mình đị du lịch hè ở đâu? Mình xin đề cử biển Cửa Lò Nghệ An là một trong những điểm đến cực kỳ hợp lý cho du lịch biển hè của gia đình. Các bạn du lịch Cửa Lò là cả nhà đã có một chuyến đi tắm biển, ăn hải sản đã đời rồi. [&hellip;]</p>
+
+                    </div><!-- /.entry -->
+
+                </div><!-- /.post-content -->
+                <div class="clear"></div>
+
+
+            </div><!-- #post-152 -->
+
+            <div class="navigation">
+                <span class='page-numbers current'>1</span>
+            <a class='page-numbers' href='http://dulichcualonghean.com/am-thuc-cua-lo/page/2/'>2</a>
+            <a class="next page-numbers" href="http://dulichcualonghean.com/am-thuc-cua-lo/page/2/">Next  &rarr;</a></div> 
+        </div>
+    </div>
+
+
+
+        <div class="col-md-3">
+            <h3 class="titile">
+                KHÁM PHÁ NGHỆ AN
+            </h3>
+            <div class="products-in-news4">
+                <UL CLASS="product-in-news" >
+                    <li class="" >
+                        <a  class="products-in-news3" href="vegatables.html">
+                        Điều kiện tự nhiên
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="cereal.html">
+                            Cơ sở hạ tầng
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="beans.html">
+                            Tiềm năng du lịch
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="vegatables.html">
+                            Văn hóa
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="cereal.html">
+                            Lễ hội
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+
+                    <li class="" >
+                        <a  class="products-in-news3" href="beans.html">
+                            Tậpp huấn,Đào tạo
+                        </a>
+                        <span class="SHOW_menu_left" ></span>
+                    </li>
+                </UL>
+            </div>
+            <div class="hot-news">
+                <h3 class="titile">
+                    TIN TỨC HOT
+                </h3>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/00000000000000fesybvallangnghe.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Cháo lươn, giò bê Nghệ An hút khách ở Festival Huế dịp lễ</b>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/12/CL123.jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Nghệ An đón hàng chục vạn lượt du khách trong 3 ngày đầu nghỉ lễ 30/4 và 1/5</b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/KC/19(2).jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Khám phá sông Giăng vào Hạ tấp nập khách du lịch</b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+        </div>
+                </div>
+
+                <div class="css-to-news-hot">
+                    <div class="news-image">
+                        <a href="#">
+                            <img src="http://dulichnghean.gov.vn/uploads/image/KC/6(6).jpg" width="100%"/>
+                        </a>
+                    </div>
+                    <div class="news-view" >
+                        <div class="news-title">
+                            <a href="" class="a" >
+                                <b class="b">Những hình ảnh lấp lánh tuyệt đẹp của biển Cửa Lò khiến bạn muốn đến </b>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+            </div>
+            <div class="tags " >
+                <H3 CLASS="titile">
+                    TAGS
+                </H3>
+                <ul class="tag_link" >
+                    <li>
+                        <a href="#">Đi đâu</a>
+                    </li>
+                    <li>
+                        <a href="#">Nhà hàng đặc sản địa phương</a>
+                    </li>
+                    <li>
+                        <a href="#">Ở đâu</a>
+                    </li>
+                    <li>
+                        <a href="#">Ăn gì</a>
+                    </li>
+                    <li>
+                        <a href="#">Chơi gì</a>
+                    </li>
+                    <li>
+                        <a href="#">Tour du lịch nổi bật</a>
+                    </li>
+                    <li>
+                        <a href="#">Lữ hành</a>
+                    </li>
+                    <li>
+                        <a href="#">Vận chuyển</a>
+                    </li>
+                    <li>
+                        <a href="#">Xuất nhập cảnh</a>
+                    </li>
+                    <li>
+                        <a href="#">Công an</a>
+                    </li>
+                    <li>
+                        <a href="#">Bệnh viện</a>
+                    </li>
+                    <li>
+                        <a href="#">Thông tin liên lạc</a>
+                    </li>
+                    <li>
+                        <a href="#">Đường dây nóng</a>
+                    </li>
+                    <li>
+                        <a href="#">Ngân hàng-ATM</a>
+                    </li>
+                    <li>
+                        <a href="#">Ta xi</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+</DIV>
+
+<!--scrool to top-->
+<div class="container" >
+    <a href="#top" class="to-top"  ><i class="glyphicon glyphicon-chevron-up" ></i></a>
+</div>
+<script>
+    $(document).ready(function (){
+        var offset=167;
+
+        $(window).scroll(function (){
+            if($(this).scrollTop() > offset){
+                $('.to-top').fadeIn();
+            }
+            else{
+                $('.to-top').fadeOut();
+            }
+        });
+
+        $('.to-top').click(function(){
+            $('body').animate({scrollTop: 0}, 1000)
+        })
+    });
+</script>
+<!--scrool to top-->
+<!--footer-->
+<footer>
+        <div class="container">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>CƠ QUAN CHỦ QUẢN</h4>
+                <DIV>
+                    <P>Adrees: 38 Quang Trung street,Lê Lợi District, Vinh city, Vietnam.</P>
+                    <p>Phone: +84918584119</p>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>THỜI GIAN HOẠT ĐỘNG</h4>
+                <DIV>
+                    <ul>
+                        <li>Mon - Fri: 7am to 8pm</li>
+                        <li>Sat & Sun: 7am to 6pm</li>
+                    </ul>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>LIÊN HỆ QUẢNG CÁO</h4>
+                <DIV>
+                    <P></P>
+                    <p>Phone: +84918584119</p>
+                    <p>Email: tuannguyen@gmail.com</p>
+                </DIV>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-min-12" >
+                <h4>TOUR DU LỊCH</h4>
+                <DIV>
+                    <P></P>
+                    <p>Nội tỉnh</p>
+                    <p>Liên tỉnh</p>
+                </DIV>
+            </div>
+        </div>
+    </footer>
+<!--end footer-->
+</body>
+</html>
